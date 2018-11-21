@@ -1,0 +1,15 @@
+spring:
+   datasource:
+     driverClassName: com.mysql.cj.jdbc.Driver
+     url: jdbc:mysql://localhost:3306/ogel_test?useUnicode=true&useLegacyDatetimeCode=false&autoReconnect=true&useSSL=false
+     username: root
+     password: test
+     platform: mysql
+   jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 10080
